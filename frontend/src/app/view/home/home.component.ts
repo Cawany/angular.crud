@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Product } from './../../components/product/product.model';
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/components/product/product.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  
+  constructor(private readonly productService: ProductService) {
+  }
 
+  ngOnInit(): void {
+  
+    /*this.productService.meuTeste().subscribe({
+      next:(response:any) => {
+        console.log(response);
+      }
+    });*/
+  }
 }
