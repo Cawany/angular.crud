@@ -8,13 +8,14 @@ import { Product } from '../product.model';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.css']
 })
-export class ProductCreateComponent implements OnInit{
+export class ProductCreateComponent implements OnInit {
   
-  /*atributoLegal = "qualquer"*/
-  product: Product = {
+
+  public product:Product = {
     name: '',
     price: null
-  }
+  };
+  
 
   constructor(private productService: ProductService, private router: Router) { }
 
@@ -23,12 +24,11 @@ export class ProductCreateComponent implements OnInit{
   }
 
   createProduct(): void {
-    this.productService.create(this.product).subscribe(() => { 
+    this.productService.create(this.product).subscribe(() => {
       this.productService.showMessage('Produto criado!')
       this.router.navigate(['/products'])
-    });
-
-    this.productService.showMessage('Produto criado!')
+    })
+    
   }
 
   cancel(): void {

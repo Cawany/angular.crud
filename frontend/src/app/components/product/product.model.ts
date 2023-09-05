@@ -1,5 +1,8 @@
+/*Atributos*/
+
+/*contrato */
 export interface Product {
-    id?: number
-    name: string
-    price: null
+    id?: number | any;
+    name: string;
+    price: number | any;
 }

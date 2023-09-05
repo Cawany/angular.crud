@@ -21,14 +21,24 @@
       "id": 4
     },
     {
-      "name": "",
-      "price": null,
+      "name": "Fone de ouvido",
+      "price": "35.00",
       "id": 5
     },
     {
-      "name": "",
-      "price": null,
+      "name": "Harry",
+      "price": "inestimavél",
       "id": 6
+    },
+    {
+      "name": "Caneta",
+      "price": "12.0",
+      "id": 7
+    },
+    {
+      "name": "Blusa",
+      "price": "160",
+      "id": 8
     }
   ]
 }
