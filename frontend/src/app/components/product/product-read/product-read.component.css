@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+.material-icons {
+    margin-right: 10px;
+}
+
+.delete > i {
+    color: #e35e6b;
+}
+
+.edit > i{
+    color: #d9cd26;
+}

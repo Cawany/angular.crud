@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import {Router} from '@angular/router'
-import { Product } from '../product.model';
+import { Product } from "../Product";
 
 @Component({
   selector: 'app-product-create', 
@@ -27,7 +27,7 @@ export class ProductCreateComponent implements OnInit {
     this.productService.create(this.product).subscribe(() => {
       this.productService.showMessage('Produto criado!')
       this.router.navigate(['/products'])
-    })
+    });
     
   }
 

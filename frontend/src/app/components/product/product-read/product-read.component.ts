@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from '../product.model';
+import { Product } from "../Product";
 import { ProductService } from '../product.service';
 
 @Component({
@@ -9,8 +9,8 @@ import { ProductService } from '../product.service';
 })
 export class ProductReadComponent {
 
-  public products!: Product[]; 
-  displayedColumns = ['id', 'name', 'price'];
+  public products!: Product[];
+  displayedColumns = ['id', 'name', 'price', 'action']
 
   constructor(private productService: ProductService) { }
 
