@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-product-delete',
@@ -12,12 +13,13 @@ export class ProductDeleteComponent implements OnInit {
   public product: Product = {
     name: '',
     price: null,
-  };
+  };  
 
   constructor(
     private productService: ProductService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
